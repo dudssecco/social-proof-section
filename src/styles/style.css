@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: League;
+    src: url(../fonts/LeagueSpartan-VariableFont_wght.ttf) format('truetype');
+    font-size: 15px;
+}
+
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsla(333, 80%, 67%, 0.507);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: League, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+}
+
+.fundo_top, .fundo_bot{
+    position: absolute;
+}
+
+.fundo_top{
+    top: 0;
+}
+
+.fundo_bot{
+    bottom: 0;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 75px 20px;
+}
+
+.text_review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    color: var(--VeryDarkMagenta);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.title p{
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--DarkGrayishMagenta);
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.box{
+    width: 335px;
+    padding: 15px;
+    color: var(--VeryDarkMagenta);
+    background-color:  var(--LightGrayishMagenta);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.box h3{
+    font-size: 1rem;
+}
+
+.stars{
+    margin-bottom: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card{
+    width: 100%;
+    padding: 30px 30px;
+    background-color: var(--VeryDarkMagenta);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+    line-height: 23px;
+    font-size: 15px;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.person h4{
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.person h4 span{
+    color: var(--SoftPink);
+}
+
+.person img{
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
